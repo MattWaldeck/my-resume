@@ -15,7 +15,7 @@ const Contact = () => {
                 <BiMap className="text-3xl text-custom-blue bg-blue-100 p-2 rounded-full" />
                 <div className="ml-4">
                   <h4 className="text-xl font-bold">Location:</h4>
-                  <p>Durbanville, Pinehurst</p>
+                  <p>Durbanville, Cape Town</p>
                 </div>
               </div>
 
