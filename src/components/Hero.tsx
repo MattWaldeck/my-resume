@@ -7,7 +7,8 @@ const Hero = () => {
       id="hero"
       className="w-full h-screen bg-cover bg-center bg-no-repeat relative flex items-center justify-center"
       style={{
-        backgroundImage: `url('public/assets/img/fotis-fotopoulos-DuHKoV44prg-unsplash.jpg')`,
+        backgroundImage:
+          '/assets/img/fotis-fotopoulos-DuHKoV44prg-unsplash.jpg',
       }}
     >
       <div className="absolute inset-0 bg-black/60"></div>
