@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i');
+
+@layer components {
+  .resume-item {
+    @apply pt-0 pr-0 pb-5 pl-5 mt-[-2px] border-l-2 border-custom-blue relative;
+  }
+  .resume-item::before {
+    content: '';
+    @apply absolute w-4 h-4 rounded-full -left-[9px] top-0 bg-white border-2 border-custom-blue;
+  }
+}
