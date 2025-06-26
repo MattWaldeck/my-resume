@@ -1,7 +1,7 @@
 import CountUp from 'react-countup';
 import { useInView } from 'react-intersection-observer';
 import { BsJournalRichtext, BsAward, BsReceipt } from 'react-icons/bs';
-import { BiHeadphone } from 'react-icons/bi';
+
 import SectionTitle from './SectionTitle';
 
 interface FactItemProps {
