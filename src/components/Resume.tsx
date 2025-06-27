@@ -20,11 +20,11 @@ const Resume = () => {
                 strong proficiency in modern front-end and back-end frameworks,
                 cloud platforms and database systems.
               </p>
-              <ul className="pl-5 mt-2 space-y-1">
-                <li>Pinehurst, Durbanville, Cape Town</li>
+              {/* <ul className="pl-5 mt-2 space-y-1">
+                <li>Durbanville, Cape Town</li>
                 <li>(078) 921-3169</li>
                 <li>Waldeck.mk@gmail.com</li>
-              </ul>
+              </ul> */}
             </div>
 
             <h3 className="text-2xl font-bold mt-10 mb-5 text-custom-dark-gray">

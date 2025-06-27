@@ -52,6 +52,11 @@ const About = () => {
                     <BiChevronRight className="text-custom-blue text-xl" />{' '}
                     <strong>City:</strong> <span>Cape Town, South Africa</span>
                   </li>
+                  <li className="flex items-center">
+                    <BiChevronRight className="text-custom-blue text-xl" />{' '}
+                    <strong>Currently:</strong>{' '}
+                    <span>Full-Stack Developer at WBWR</span>
+                  </li>
                 </ul>
               </div>
               <div>
@@ -62,7 +67,7 @@ const About = () => {
                   </li>
                   <li className="flex items-center">
                     <BiChevronRight className="text-custom-blue text-xl" />{' '}
-                    <strong>Degree:</strong> <span>BSc IT</span>
+                    <strong>Degree:</strong> <span>BSc IT (Cum Laude)</span>
                   </li>
                   <li className="flex items-center">
                     <BiChevronRight className="text-custom-blue text-xl" />{' '}
@@ -71,6 +76,11 @@ const About = () => {
                   <li className="flex items-center">
                     <BiChevronRight className="text-custom-blue text-xl" />{' '}
                     <strong>Freelance:</strong> <span>Available</span>
+                  </li>
+                  <li className="flex items-center">
+                    <BiChevronRight className="text-custom-blue text-xl" />{' '}
+                    <strong>Languages:</strong>{' '}
+                    <span>English, Afrikaans (Conversational)</span>
                   </li>
                 </ul>
               </div>
