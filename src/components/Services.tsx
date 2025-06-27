@@ -6,6 +6,7 @@ import {
   BiLayer,
   BiArch,
 } from 'react-icons/bi';
+import SectionTitle from './SectionTitle';
 
 interface ServiceCardProps {
   icon: React.ReactNode;
@@ -28,7 +29,7 @@ const Services = () => {
     <section id="services" className="services py-16">
       <div className="container mx-auto px-4">
         <div className="section-title text-center">
-          <h2>Services</h2>
+          <SectionTitle>Services</SectionTitle>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
           <ServiceCard icon={<BiBriefcase />} title="Web Development">

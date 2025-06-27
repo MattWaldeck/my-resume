@@ -1,11 +1,12 @@
 import { BiMap, BiEnvelope, BiPhone } from 'react-icons/bi';
+import SectionTitle from './SectionTitle';
 
 const Contact = () => {
   return (
     <section id="contact" className="contact py-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="section-title text-center">
-          <h2>Contact</h2>
+          <SectionTitle>Contact</SectionTitle>
         </div>
 
         <div className="flex justify-center mt-8">
