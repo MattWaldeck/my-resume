@@ -37,15 +37,15 @@ const SkillBar = ({ skill, value }: SkillBarProps) => {
 
 const Skills = () => {
   const skillsData = [
-    { name: 'JavaScript / TypeScript', value: '95%' },
-    { name: 'React / Next.js / Remix', value: '90%' },
+    { name: 'JavaScript / TypeScript', value: '85%' },
+    { name: 'React / Next.js / Remix', value: '80%' },
     { name: 'Node.js', value: '85%' },
     { name: 'Java / Springboot', value: '80%' },
-    { name: 'Python', value: '75%' },
+    { name: 'Python', value: '65%' },
     { name: 'SQL / MongoDB', value: '85%' },
     { name: 'Shopify (Hydrogen, Liquid)', value: '90%' },
     { name: 'Vue.js / Angular', value: '70%' },
-    { name: 'Azure DevOps', value: '80%' },
+    { name: 'Azure DevOps', value: '65%' },
     { name: 'Figma', value: '85%' },
   ];
 
