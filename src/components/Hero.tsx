@@ -1,5 +1,6 @@
 import { ReactTyped } from 'react-typed';
 import { FaLinkedin, FaGithub, FaEnvelope, FaDownload } from 'react-icons/fa';
+import heroBackground from '/assets/img/fotis-fotopoulos-DuHKoV44prg-unsplash.jpg';
 
 const Hero = () => {
   return (
@@ -7,7 +8,7 @@ const Hero = () => {
       id="hero"
       className="w-full h-screen bg-cover bg-center bg-no-repeat relative flex items-center justify-center"
       style={{
-        backgroundImage: `url('./assets/img/fotis-fotopoulos-DuHKoV44prg-unsplash.jpg')`,
+        backgroundImage: `url(${heroBackground})`,
       }}
     >
       <div className="absolute inset-0 bg-black/60"></div>

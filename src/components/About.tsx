@@ -1,5 +1,6 @@
 import { BiChevronRight } from 'react-icons/bi';
 import SectionTitle from './SectionTitle';
+import profilePic from '/assets/img/ProfilePic2.jpg';
 
 const About = () => {
   return (
@@ -22,7 +23,7 @@ const About = () => {
         >
           <div className="lg:col-span-1 flex justify-center">
             <img
-              src="./assets/img/ProfilePic2.jpg"
+              src={profilePic}
               className="w-full h-auto max-w-sm rounded-lg shadow-lg"
               alt="Matthew Waldeck"
             />
