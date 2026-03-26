@@ -56,7 +56,7 @@ const Hero = () => {
             <FaEnvelope /> <span>Email</span>
           </a>
           <a
-            href="/assets/documents/CV%202025-%20Latest%20Update.pdf"
+            href="/assets/documents/CV_Matthew_Waldeck_v2.pdf"
             download
             className="flex items-center space-x-2 text-lg text-white border border-white px-4 py-2 rounded-full hover:bg-custom-blue hover:border-custom-blue transition"
           >

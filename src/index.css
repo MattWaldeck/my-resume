@@ -6,10 +6,13 @@
 
 @layer components {
   .resume-item {
-    @apply pt-0 pr-0 pb-5 pl-5 mt-[-2px] border-l-2 border-custom-blue relative;
+    @apply pt-0 pr-0 pb-6 pl-6 mb-8 mt-[-2px] relative;
   }
   .resume-item::before {
     content: '';
-    @apply absolute w-4 h-4 rounded-full -left-[9px] top-0 bg-white border-2 border-custom-blue;
+    @apply absolute w-3 h-3 rounded-full left-0 top-2 bg-custom-blue shadow-lg;
+  }
+  .resume-item:hover::before {
+    @apply scale-125 transition-transform duration-300;
   }
 }

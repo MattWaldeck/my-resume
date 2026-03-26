@@ -37,16 +37,18 @@ const SkillBar = ({ skill, value }: SkillBarProps) => {
 
 const Skills = () => {
   const skillsData = [
-    { name: 'JavaScript / TypeScript', value: '85%' },
-    { name: 'React / Next.js / Remix', value: '80%' },
-    { name: 'Node.js', value: '85%' },
-    { name: 'Java / Springboot', value: '80%' },
-    { name: 'Python', value: '65%' },
+    { name: 'JavaScript / TypeScript', value: '90%' },
+    { name: 'React / Next.js / Remix', value: '85%' },
+    { name: 'Shopify (Hydrogen, Liquid)', value: '95%' },
+    { name: 'Node.js / Express', value: '85%' },
+    { name: 'Magento / Adobe Commerce', value: '75%' },
     { name: 'SQL / MongoDB', value: '85%' },
-    { name: 'Shopify (Hydrogen, Liquid)', value: '90%' },
-    { name: 'Vue.js / Angular', value: '70%' },
-    { name: 'Azure DevOps', value: '65%' },
-    { name: 'Figma', value: '85%' },
+    { name: 'Azure DevOps / CI/CD', value: '80%' },
+    { name: 'Java / Springboot', value: '80%' },
+    { name: 'REST APIs / GraphQL', value: '85%' },
+    { name: 'Git / Version Control', value: '90%' },
+    { name: 'Python', value: '65%' },
+    { name: 'Figma / UI Design', value: '85%' },
   ];
 
   const half = Math.ceil(skillsData.length / 2);
