@@ -56,7 +56,7 @@ const About = () => {
                   <li className="flex items-center">
                     <BiChevronRight className="text-custom-blue text-xl" />{' '}
                     <strong>Currently:</strong>{' '}
-                    <span>Full-Stack Developer at WBWR</span>
+                    <span>Full-Stack Developer at eCommerceAfrica</span>
                   </li>
                 </ul>
               </div>
@@ -64,7 +64,7 @@ const About = () => {
                 <ul className="space-y-4">
                   <li className="flex items-center">
                     <BiChevronRight className="text-custom-blue text-xl" />{' '}
-                    <strong>Age:</strong> <span>26</span>
+                    <strong>Age:</strong> <span>27</span>
                   </li>
                   <li className="flex items-center">
                     <BiChevronRight className="text-custom-blue text-xl" />{' '}
