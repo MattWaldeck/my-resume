@@ -9,7 +9,7 @@ const About = () => {
         <SectionTitle>About</SectionTitle>
 
         <p className="max-w-3xl mx-auto text-center" data-aos="fade-up">
-          Full-stack focused BSc Information Technology graduate with strong
+          Full-stack developer with a BSc in Information Technology and strong
           proficiency in modern front-end and back-end frameworks, cloud
           platforms and database systems. Passionate about solving real-world
           problems through clean code, intuitive interfaces, and cloud-enabled
