@@ -1,38 +1,79 @@
-import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
+import { FiMail } from 'react-icons/fi';
+import { navLinks, profile } from '../data';
+import HoverLetters from './HoverLetters';
 
 const Footer = () => {
   return (
-    <footer
-      id="footer"
-      className="bg-gray-100 py-8 text-center text-[#45505b] lg:ml-[100px]"
-    >
-      <div className="container mx-auto px-4">
-        <h3 className="text-4xl font-bold font-raleway">Matthew Waldeck</h3>
-        <p className="italic my-4">
-          Ready to leverage my experience and creativity to make a positive
-          impact in the world of technology.
+    <footer className="bg-paper pb-24 pt-16 md:pb-12">
+      <div className="wrap">
+        <p className="wipe font-display text-[15vw] font-bold leading-[0.9] tracking-tighter sm:text-[12vw] lg:text-[150px]">
+          <HoverLetters text={profile.name} />
         </p>
-        <div className="social-links flex justify-center space-x-4 my-8">
-          <a
-            href="https://www.linkedin.com/in/matthew-waldeck-a77884255/"
-            className="text-2xl bg-[#0563bb] text-white w-9 h-9 inline-flex items-center justify-center rounded-full transition-colors hover:bg-[#0678e3]"
-          >
-            <FaLinkedin />
-          </a>
-          <a
-            href="https://github.com/MattWaldeck"
-            className="text-2xl bg-[#0563bb] text-white w-9 h-9 inline-flex items-center justify-center rounded-full transition-colors hover:bg-[#0678e3]"
-          >
-            <FaGithub />
-          </a>
+
+        <div className="mt-12 grid gap-10 border-t border-line pt-10 text-sm sm:grid-cols-2 lg:grid-cols-4">
+          <div>
+            <p className="font-semibold">Full-stack developer · {profile.city}</p>
+            <p className="mt-2 max-w-[240px] leading-relaxed text-muted">{profile.current}. Open to remote & hybrid roles: permanent, part-time or contract.</p>
+          </div>
+
+          <div>
+            <p className="font-semibold">Sections</p>
+            <ul className="mt-3 space-y-2 text-muted">
+              {navLinks.map((l) => (
+                <li key={l.id}>
+                  <a href={`#${l.id}`} className="hover:text-ink">
+                    {l.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <p className="font-semibold">Elsewhere</p>
+            <ul className="mt-3 space-y-2 text-muted">
+              <li>
+                <a href={profile.linkedin} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-ink">
+                  <FaLinkedin className="text-[#0a66c2]" /> LinkedIn
+                </a>
+              </li>
+              <li>
+                <a href={profile.github} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-ink">
+                  <FaGithub /> GitHub
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <p className="font-semibold">Contact</p>
+            <ul className="mt-3 space-y-2 text-muted">
+              <li>
+                <a href={`mailto:${profile.email}`} className="flex items-center gap-2 hover:text-ink">
+                  <FiMail className="text-[#d9534f]" /> Email
+                </a>
+              </li>
+              <li>
+                <a href={profile.whatsapp} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-ink">
+                  <FaWhatsapp className="text-[#25d366]" /> WhatsApp
+                </a>
+              </li>
+              <li>
+                <a href={profile.cv} download="CV_Matthew_Waldeck.pdf" className="hover:text-ink">
+                  Resume
+                </a>
+              </li>
+              <li>
+                <a href="#top" className="hover:text-ink">
+                  Back to top ↑
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div className="copyright">
-          &copy; Copyright{' '}
-          <strong>
-            <span>MyResume</span>
-          </strong>
-          . All Rights Reserved
-        </div>
+
+        <p className="mt-12 text-xs text-muted">© {new Date().getFullYear()} {profile.name}</p>
       </div>
     </footer>
   );

@@ -1,39 +1,40 @@
-import { useEffect } from 'react';
-import AOS from 'aos';
 import Header from './components/Header';
 import Hero from './components/Hero';
-import About from './components/About';
-import Facts from './components/Facts';
-import Skills from './components/Skills';
-import Resume from './components/Resume';
-import Services from './components/Services';
+import Marquee from './components/Marquee';
+import Brands from './components/Brands';
+import OpenToWork from './components/OpenToWork';
+import Projects from './components/Projects';
+import Experience from './components/Experience';
+import Approach from './components/Approach';
+import CtaBand from './components/CtaBand';
+import Stack from './components/Stack';
+import Journey from './components/Journey';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import CommandPalette from './components/CommandPalette';
+import Toaster from './components/Toaster';
 
 function App() {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      easing: 'ease-in-out',
-      once: true,
-      mirror: false,
-    });
-  }, []);
-
   return (
-    <div className="font-sans text-custom-base-text">
+    <>
       <Header />
-      <Hero />
-      <main className="lg:ml-[100px]">
-        <About />
-        <Facts />
-        <Skills />
-        <Resume />
-        <Services />
+      <main>
+        <Hero />
+        <Marquee />
+        <OpenToWork />
+        <Brands />
+        <Projects />
+        <Experience />
+        <Approach />
+        <CtaBand />
+        <Stack />
+        <Journey />
         <Contact />
       </main>
       <Footer />
-    </div>
+      <CommandPalette />
+      <Toaster />
+    </>
   );
 }
 
