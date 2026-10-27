@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="bg-paper pb-24 pt-16 md:pb-12">
       <div className="wrap">
-        <p className="wipe font-display text-[15vw] font-bold leading-[0.9] tracking-tighter sm:text-[12vw] lg:text-[150px]">
+        <p className="wipe whitespace-nowrap font-display text-[min(10.5vw,128px)] font-bold leading-[0.95] tracking-tighter">
           <HoverLetters text={profile.name} />
         </p>
 
