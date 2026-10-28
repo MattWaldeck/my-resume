@@ -33,7 +33,7 @@ const CommandPalette = () => {
         run: () => {
           const a = document.createElement('a');
           a.href = profile.cv;
-          a.download = 'CV_Matthew_Waldeck.pdf';
+          a.download = 'Matthew_Waldeck_CV_2026.pdf';
           a.click();
         },
       },

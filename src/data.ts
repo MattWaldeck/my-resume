@@ -14,7 +14,7 @@ export const profile = {
   github: 'https://github.com/MattWaldeck',
   githubHandle: 'MattWaldeck',
   photo: `${base}assets/img/ProfilePic2.jpg`,
-  cv: `${base}assets/documents/CV_Matthew_Waldeck_v2.pdf`,
+  cv: `${base}assets/documents/Matthew_Waldeck_CV_2026.pdf`,
   current: 'Full Stack Developer at eCommerceAfrica',
   degree: 'BSc IT (Cum Laude)',
   languages: 'English, Afrikaans (conversational)',
@@ -232,7 +232,7 @@ export const stack = [
   {
     title: 'Frontend',
     text: 'Interfaces and storefront experiences',
-    items: ['JavaScript', 'TypeScript', 'React', 'Next.js', 'Remix', 'Tailwind CSS'],
+    items: ['JavaScript', 'TypeScript', 'React', 'Next.js', 'Remix', 'Tailwind CSS', 'HTML', 'CSS'],
   },
   {
     title: 'Commerce',
@@ -247,17 +247,17 @@ export const stack = [
   {
     title: 'Data',
     text: 'Databases and analytics',
-    items: ['SQL Server', 'MySQL', 'MongoDB', 'Azure Synapse'],
+    items: ['SQL', 'PostgreSQL', 'MySQL', 'SQL Server', 'MongoDB', 'Supabase', 'Azure Synapse'],
   },
   {
     title: 'Cloud & delivery',
     text: 'Shipping and running software',
-    items: ['Azure', 'Azure DevOps', 'CI/CD', 'Git', 'GitHub'],
+    items: ['DevOps', 'Azure', 'Azure DevOps', 'CI/CD', 'Git', 'GitHub'],
   },
   {
     title: 'Mobile & design',
     text: 'Apps and the screens behind them',
-    items: ['Kotlin', 'Android Studio', 'Figma', 'UI design'],
+    items: ['iOS', 'Android', 'Kotlin', 'Android Studio', 'Figma', 'UI design'],
   },
 ];
 

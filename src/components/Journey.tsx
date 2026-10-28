@@ -36,7 +36,7 @@ const Journey = () => {
 
             <a
               href={profile.cv}
-              download="CV_Matthew_Waldeck.pdf"
+              download="Matthew_Waldeck_CV_2026.pdf"
               className="group mt-5 flex items-center justify-between border-b border-line pb-5"
             >
               <span>

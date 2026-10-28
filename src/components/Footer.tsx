@@ -60,7 +60,7 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href={profile.cv} download="CV_Matthew_Waldeck.pdf" className="hover:text-ink">
+                <a href={profile.cv} download="Matthew_Waldeck_CV_2026.pdf" className="hover:text-ink">
                   Resume
                 </a>
               </li>

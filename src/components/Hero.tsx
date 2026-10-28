@@ -91,7 +91,7 @@ const Hero = () => {
             <a href={`mailto:${profile.email}`} className="btn-outline">
               Email me
             </a>
-            <a href={profile.cv} download="CV_Matthew_Waldeck.pdf" className="btn-outline">
+            <a href={profile.cv} download="Matthew_Waldeck_CV_2026.pdf" className="btn-outline">
               Resume (PDF)
             </a>
           </div>
