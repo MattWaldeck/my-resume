@@ -54,10 +54,17 @@ const Viewfinder = ({ show }: { show: boolean }) => (
   </div>
 );
 
-const PotholeDemo = () => {
-  const [step, setStep] = useState(0);
+interface PotholeDemoProps {
+  // Hide the caption and play/replay buttons (for still graphics).
+  controls?: boolean;
+  // Render a single still frame at this step instead of playing (for graphics).
+  still?: number;
+}
+
+const PotholeDemo = ({ controls = true, still }: PotholeDemoProps) => {
+  const [step, setStep] = useState(still ?? 0);
   const [loop, setLoop] = useState(0);
-  const [playing, setPlaying] = useState(true);
+  const [playing, setPlaying] = useState(still === undefined);
   const [visible, setVisible] = useState(false);
   const [tilt, setTilt] = useState({ x: 0, y: 0 });
   const root = useRef<HTMLDivElement>(null);
@@ -289,31 +296,33 @@ const PotholeDemo = () => {
       </div>
 
       {/* Player controls */}
-      <div className="relative mt-8 flex items-center justify-between gap-3">
-        <p className="min-h-[2.5em] text-xs leading-snug text-muted" aria-live="polite">
-          <span key={step} className="inline-block animate-rise">
-            {steps[step].caption}
-          </span>
-        </p>
-        <div className="flex shrink-0 gap-1.5">
-          <button
-            type="button"
-            onClick={() => setPlaying((p) => !p)}
-            aria-label={playing ? 'Pause demo' : 'Play demo'}
-            className="flex h-8 w-8 items-center justify-center rounded-full border border-line bg-card text-ink-2 transition-transform duration-150 ease-out active:scale-90"
-          >
-            {playing ? <FiPause /> : <FiPlay />}
-          </button>
-          <button
-            type="button"
-            onClick={replay}
-            aria-label="Replay demo"
-            className="flex h-8 w-8 items-center justify-center rounded-full border border-line bg-card text-ink-2 transition-transform duration-150 ease-out active:scale-90"
-          >
-            <FiRotateCcw />
-          </button>
+      {controls && (
+        <div className="relative mt-8 flex items-center justify-between gap-3">
+          <p className="min-h-[2.5em] text-xs leading-snug text-muted" aria-live="polite">
+            <span key={step} className="inline-block animate-rise">
+              {steps[step].caption}
+            </span>
+          </p>
+          <div className="flex shrink-0 gap-1.5">
+            <button
+              type="button"
+              onClick={() => setPlaying((p) => !p)}
+              aria-label={playing ? 'Pause demo' : 'Play demo'}
+              className="flex h-8 w-8 items-center justify-center rounded-full border border-line bg-card text-ink-2 transition-transform duration-150 ease-out active:scale-90"
+            >
+              {playing ? <FiPause /> : <FiPlay />}
+            </button>
+            <button
+              type="button"
+              onClick={replay}
+              aria-label="Replay demo"
+              className="flex h-8 w-8 items-center justify-center rounded-full border border-line bg-card text-ink-2 transition-transform duration-150 ease-out active:scale-90"
+            >
+              <FiRotateCcw />
+            </button>
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 };

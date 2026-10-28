@@ -34,6 +34,7 @@ const Hero = () => {
   const typed = useTypedLines(1300);
 
   useEffect(() => {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
     const id = setInterval(() => setWord((w) => (w + 1) % heroWords.length), 2600);
     return () => clearInterval(id);
   }, []);
@@ -67,7 +68,7 @@ const Hero = () => {
               <span className="block">
                 <span
                   key={word}
-                  className="inline-block animate-rise text-rust"
+                  className="inline-block animate-rise text-rust motion-reduce:animate-none"
                   style={{ animationDelay: word === 0 ? `${wordCount * 70}ms` : '0ms' }}
                 >
                   {heroWords[word]}
