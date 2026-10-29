@@ -85,7 +85,9 @@ export const brands = [
   },
 ];
 
-export const featuredProject = {
+export const featuredProjects = [
+  {
+  demo: 'pothole' as const,
   name: 'Pothole Scanner',
   kind: 'Civic tech · Personal project · Private',
   status: 'In progress',
@@ -99,7 +101,24 @@ export const featuredProject = {
   ],
   next: 'Next: AI that reads the photo to estimate the pothole’s width and depth, so crews know how much sand and tar to bring.',
   stack: ['React Native', 'Expo', 'TypeScript', 'React', 'Vite', 'Firebase'],
-};
+  },
+  {
+    demo: 'proofmark' as const,
+    name: 'Proofmark',
+    kind: 'SaaS · Personal project · Beta',
+    status: 'What’s next',
+    pitch: 'Client feedback, pinned to the pixel',
+    text: 'Design feedback usually arrives as screenshots, emails and chat messages. Proofmark gives every client company its own review dashboard: their team pins comments on the exact spot of a design, requests changes or approves a specific version, and the studio sees it live.',
+    points: [
+      'Pin comments by click or keyboard, tied to a person, a pixel and a version',
+      'Roles enforced in the database: only approvers can sign off',
+      'Clients join from an invite by magic link, no password',
+      'Live inbox for studios, versioned uploads and approval history',
+    ],
+    next: 'Email notifications for new comments and approvals, paid plans after the free beta, and reviews for PDFs and video.',
+    stack: ['Next.js', 'TypeScript', 'Supabase', 'Postgres RLS', 'Tailwind CSS', 'Playwright', 'Vercel'],
+  },
+];
 
 export const projectFilters = ['All', 'Client sites', 'Products', 'Personal'] as const;
 export type ProjectFilter = (typeof projectFilters)[number];
