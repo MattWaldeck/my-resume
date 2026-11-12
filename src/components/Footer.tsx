@@ -13,7 +13,7 @@ const Footer = () => {
 
         <div className="mt-12 grid gap-10 border-t border-line pt-10 text-sm sm:grid-cols-2 lg:grid-cols-4">
           <div>
-            <p className="font-semibold">Full-stack developer · {profile.city}</p>
+            <p className="font-semibold">Full-stack TypeScript developer · {profile.city}</p>
             <p className="mt-2 max-w-[240px] leading-relaxed text-muted">{profile.current}. Open to remote & hybrid roles: permanent, part-time or contract.</p>
           </div>
 

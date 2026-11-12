@@ -4,6 +4,7 @@ import { featuredProjects, profile, projectFilters, projects } from '../data';
 import type { ProjectFilter } from '../data';
 import { trackSpot } from '../lib/ui';
 import PotholeDemo from './PotholeDemo';
+import HearthDemo from './HearthDemo';
 import ProofmarkDemo from './ProofmarkDemo';
 import SectionHead from './SectionHead';
 
@@ -15,7 +16,7 @@ const Projects = () => {
     <section id="projects" className="scroll-mt-16 border-t border-line py-24 sm:py-32">
       <div className="wrap">
         <SectionHead title={<>Things I'm building myself.</>}>
-          A civic-tech app headed for government, a feedback tool for design studios, websites I run for small businesses, and products I sell.
+          A civic-tech app headed for government, a feedback tool for design studios, a family organiser, websites I run for small businesses, and products I sell.
         </SectionHead>
 
         <div className="mt-14 space-y-10">
@@ -64,7 +65,7 @@ const Projects = () => {
 
             <div className="grid-bg relative flex items-center justify-center overflow-hidden bg-paper-2 px-6 py-14">
               <div className="pointer-events-none absolute left-1/2 top-1/2 h-[70%] w-[70%] -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent/25 blur-[90px]" />
-              {fp.demo === 'pothole' ? <PotholeDemo /> : <ProofmarkDemo />}
+              {fp.demo === 'pothole' ? <PotholeDemo /> : fp.demo === 'proofmark' ? <ProofmarkDemo /> : <HearthDemo />}
             </div>
           </article>
           ))}

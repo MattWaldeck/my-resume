@@ -4,7 +4,7 @@ const base = import.meta.env.BASE_URL;
 
 export const profile = {
   name: 'Matthew Waldeck',
-  role: 'Full-stack developer',
+  role: 'Full-stack TypeScript developer',
   city: 'Cape Town',
   location: 'Durbanville, Cape Town, South Africa',
   email: 'waldeck.mk@gmail.com',
@@ -97,10 +97,10 @@ export const featuredProjects = [
     'Photo + exact GPS location and address captured on the spot',
     'Severity rating, offline-first saving and background sync',
     'Hotspot tracker that ranks repeat locations by frequency × severity',
-    'Staff dashboard with login, filters and status updates back to the reporter',
+    'Staff dashboard with login, map view, filters and status updates back to the reporter',
   ],
   next: 'Next: AI that reads the photo to estimate the pothole’s width and depth, so crews know how much sand and tar to bring.',
-  stack: ['React Native', 'Expo', 'TypeScript', 'React', 'Vite', 'Firebase'],
+  stack: ['React Native', 'Expo', 'TypeScript', 'React', 'Vite', 'Firebase', 'Leaflet'],
   },
   {
     demo: 'proofmark' as const,
@@ -117,6 +117,22 @@ export const featuredProjects = [
     ],
     next: 'Email notifications for new comments and approvals, paid plans after the free beta, and reviews for PDFs and video.',
     stack: ['Next.js', 'TypeScript', 'Supabase', 'Postgres RLS', 'Tailwind CSS', 'Playwright', 'Vercel'],
+  },
+  {
+    demo: 'hearth' as const,
+    name: 'Hearth',
+    kind: 'Family organiser · Personal project · PWA',
+    status: 'What’s next',
+    pitch: 'One home for the whole household',
+    text: 'Family life runs on group chats, fridge notes and forgotten reminders. Hearth puts it in one place: a shared calendar, shopping and to-do lists that update live on everyone’s phone, and a chores board, with each person in their own colour.',
+    points: [
+      'Shared calendar with month, week and agenda views, filtered by person',
+      'Shopping and to-do lists that sync live across the family',
+      'Chores board for today and the week, assigned by person',
+      'Child profiles with or without a login; each family’s data stays private',
+    ],
+    next: 'Stage 1 is built and installs on phones like an app. Next: family messages, a photo gallery, meal planning, a budget, school timetables and contacts.',
+    stack: ['Next.js', 'React 19', 'TypeScript', 'Tailwind CSS', 'Supabase Realtime', 'Postgres RLS', 'PWA', 'Playwright'],
   },
 ];
 
@@ -166,10 +182,10 @@ export const projects: {
   {
     name: 'Vuka',
     group: 'Products',
-    kind: 'SaaS MVP · Private',
-    text: 'WhatsApp-native invoicing and bookings: businesses send a link that opens straight from WhatsApp, no app needed.',
-    stack: ['React', 'Vite', 'Supabase', 'Vercel'],
-    status: 'Building',
+    kind: 'SaaS · Private',
+    text: 'WhatsApp-native invoicing and bookings for small businesses: share a link that opens straight from WhatsApp, no app for customers to install.',
+    stack: ['React', 'TypeScript', 'Vite', 'Supabase', 'Vercel'],
+    status: 'MVP',
   },
   {
     name: 'Gym tracker',
@@ -251,32 +267,32 @@ export const stack = [
   {
     title: 'Frontend',
     text: 'Interfaces and storefront experiences',
-    items: ['JavaScript', 'TypeScript', 'React', 'Next.js', 'Remix', 'Tailwind CSS', 'HTML', 'CSS'],
+    items: ['TypeScript', 'JavaScript', 'React', 'Next.js', 'Remix', 'Vue.js', 'Angular', 'Tailwind CSS', 'shadcn/ui'],
   },
   {
     title: 'Commerce',
     text: 'Platforms I build stores on',
-    items: ['Shopify Hydrogen', 'Liquid', 'Shopify APIs', 'Magento', 'Adobe Commerce', 'Plytix PIM'],
+    items: ['Shopify Hydrogen', 'Shopify Plus', 'Liquid', 'Magento', 'Adobe Commerce', 'Plytix PIM', 'ERP/CRM integration'],
   },
   {
-    title: 'Backend',
-    text: 'APIs, services and business logic',
-    items: ['Node.js', 'Express', 'Java', 'Spring Boot', 'REST', 'GraphQL', 'Python'],
+    title: 'Backend & data',
+    text: 'APIs, databases and business logic',
+    items: ['Node.js', 'Express', 'REST', 'GraphQL', 'Zod', 'Spring Boot', 'PostgreSQL', 'Supabase', 'Firebase', 'MongoDB', 'SQL Server'],
   },
   {
-    title: 'Data',
-    text: 'Databases and analytics',
-    items: ['SQL', 'PostgreSQL', 'MySQL', 'SQL Server', 'MongoDB', 'Supabase', 'Azure Synapse'],
+    title: 'Mobile',
+    text: 'Apps for phones',
+    items: ['React Native', 'Expo', 'PWA', 'Kotlin', 'Android Studio', 'Leaflet maps'],
   },
   {
-    title: 'Cloud & delivery',
-    text: 'Shipping and running software',
-    items: ['DevOps', 'Azure', 'Azure DevOps', 'CI/CD', 'Git', 'GitHub'],
+    title: 'Quality & delivery',
+    text: 'Testing, shipping and running software',
+    items: ['Vitest', 'Playwright', 'axe accessibility', 'GitHub Actions', 'Azure DevOps', 'Vercel', 'Azure', 'Sentry'],
   },
   {
-    title: 'Mobile & design',
-    text: 'Apps and the screens behind them',
-    items: ['iOS', 'Android', 'Kotlin', 'Android Studio', 'Figma', 'UI design'],
+    title: 'AI & design',
+    text: 'Agents, tooling and the screens behind them',
+    items: ['LangChain', 'LangGraph', 'AI agents', 'Claude Code', 'Python', 'Figma', 'UI design'],
   },
 ];
 
@@ -301,18 +317,22 @@ export const journey = [
   },
   {
     year: '2025',
-    where: 'Now',
+    where: 'eCommerceAfrica',
     title: 'Enterprise B2B commerce',
-    text: 'At eCommerceAfrica I own B2B platforms like Jonsson Workwear and DCC across Shopify and Magento. I’m open to remote or hybrid roles, permanent, part-time or contract.',
+    text: 'At eCommerceAfrica I build B2B platforms like Jonsson Workwear and DCC across Shopify and Magento.',
+  },
+  {
+    year: '2026',
+    where: 'Now',
+    title: 'Shipping my own products',
+    text: 'Alongside client work I design, build and ship my own TypeScript products end to end: Proofmark, Hearth, Pothole Scanner and Vuka. I’m open to remote or hybrid roles, permanent, part-time or contract.',
   },
 ];
 
 export const certifications = [
-  'Microsoft Certified: Azure Fundamentals',
-  'Azure Synapse Analytics for Data Engineers',
-  'MTA: Database Fundamentals',
-  'C# Complete A–Z Masterclass',
-  'Microsoft SQL Server for Beginners',
-  'MS Access 2019 Certificate',
-  'ML & GenAI (TensorFlow, GPT, OpenAI)',
+  'Production AI Agents: LangChain and LangGraph · Udemy, Jul 2026',
+  'Chrome DevTools User · Google for Developers, Nov 2025',
+  'ML, Data Science and Generative AI with Python · Udemy, Oct 2024',
+  'Azure Synapse Analytics for Data Engineers · Udemy, Aug 2024',
+  'Microsoft Certified: Azure Fundamentals · Microsoft, Sep 2020',
 ];

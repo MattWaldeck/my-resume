@@ -78,7 +78,7 @@ const Hero = () => {
           </h1>
 
           <p className="mt-7 max-w-xl animate-rise text-lg leading-relaxed text-muted [animation-delay:600ms]">
-            Full-stack developer in Cape Town. Right now: B2B commerce for Jonsson Workwear and DCC at eCommerceAfrica.
+            Full-stack TypeScript developer in Cape Town. Right now: B2B commerce for Jonsson Workwear and DCC at eCommerceAfrica.
             Before that, storefronts for Under Armour, Vans, Crocs and Birkenstock.
           </p>
 
